@@ -1,52 +1,63 @@
-    <style>* {
-        background-color: aliceblue;
-        font-family: Arial, Helvetica, sans-serif;
-    }
+* {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-    .profile {
-        background-color: aquamarine;
-        text-align: center;
-    }
+.profile {
+    background-color: aquamarine;
+    text-align: center;
+}
 
-    #Information {
-        font-size: 0.8rem;
-    }
+#Information {
+    font-size: 0.8rem;
+}
 
-    img {
-        width: 10%;
-        float: right;
-        margin-right: 15%;
-        margin-bottom: 60px;
-        border: 1px solid black;
-        border-radius: 12px;
-    }
+img {
+    width: 10%;
+    float: right;
+    margin-right: 15%;
+    margin-bottom: 60px;
+    border: 1px solid black;
+    border-radius: 12px;
+}
 
-    .Summary {
-        text-align: justify;
-        border: 1px solid black;
-        background-color: beige;
-        border-style: dashed;
-        margin-right: 20px;
-        padding: 10px;
-        font-size: 0.9rem;
-    }
+.Summary {
+    text-align: justify;
+    border: 1px solid black;
+    background-color: beige;
+    border-style: dashed;
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 0.9rem;
+}
 
-    .Heading {
-        background-color: rgb(145, 212, 212);
-    }
+.Heading {
+    background-color: rgb(145, 212, 212);
+    display: inline;
+}
 
-    #designation {
-        color: blueviolet;
-    }
+#designation {
+    color: blueviolet;
+}
 
-    th,
-    td {
-        background-color: black;
-        color: white;
-    }
+th,
+td {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+}
 
-    .footer {
-        border: 1px solid white;
-    }
+tr,
+td {
+    font-size: 11px;
+}
 
-    </style>
+.footer {
+    border: 1px solid white;
+}
+
+#Reference {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: aquamarine;
+}
