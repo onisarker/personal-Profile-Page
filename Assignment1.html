@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 1: Personal Profile Page</title>
     <style>
+        * {
+            background-color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .profile {
+            background-color: aquamarine;
+            text-align: center;
+        }
+
+        #Information {
+            font-size: 0.8rem;
+        }
+
         /* .profile {
             display: flex;
             align-items: flex-start;
@@ -15,6 +29,37 @@
             width: 10%;
             float: right;
             margin-right: 15%;
+            margin-bottom: 60px;
+            border: 1px solid black;
+            border-radius: 12px;
+        }
+
+        .Summary {
+            text-align: justify;
+            border: 1px solid black;
+            background-color: beige;
+            border-style: dashed;
+            margin-right: 20px;
+            padding: 10px;
+            font-size: 0.9rem;
+        }
+
+        .Heading {
+            background-color: rgb(145, 212, 212);
+        }
+
+        #designation {
+            color: blueviolet;
+        }
+
+        th,
+        td {
+            background-color: black;
+            color: white;
+        }
+
+        .footer {
+            border: 1px solid white;
         }
     </style>
 </head>
@@ -22,22 +67,23 @@
 <body>
     <Header class="profile">
         <h1>NORJAHAN AKTER ONI</h1>
-        <p><em>Campus Manager | Education Administrator | Academic Operations
+        <p id="designation"><em>Campus Manager | Education Administrator | Academic Operations
                 Professional</em></p>
         <img src="Image/passport.jpg" alt="passport size photo">
-        <ul>
-            <li>Location: Comilla, Bangladesh</li>
-            <li>Phone: +8801889641314</li>
-            <li>email: onisarker95@gmail.com</li>
-            <li><a href="https://www.linkedin.com/in/oni-sarker">LinkedIn: https://www.linkedin.com/in/oni-sarker</a>
-            </li>
-        </ul>
     </Header>
+    <ul id="Information">
+        <li>Location: Comilla, Bangladesh</li>
+        <li>Phone: +8801889641314</li>
+        <li>email: onisarker95@gmail.com</li>
+        <li><a href="https://www.linkedin.com/in/oni-sarker">LinkedIn: https://www.linkedin.com/in/oni-sarker</a>
+        </li>
+    </ul>
     <hr>
     <main>
         <section>
-            <h2>PROFESSIONAL SUMMARY</h2>
-            <p>Dedicated education administration professional with experience in campus management, admissions
+            <h2 class="Heading">PROFESSIONAL SUMMARY</h2>
+            <p class="Summary">Dedicated education administration professional with experience in campus management,
+                admissions
                 coordination, parent communication, school operations, and academic support. Skilled in organizing
                 educational activities, managing stakeholder relationships, coordinating events, and maintaining
                 efficient administrative processes. Experienced in digital documentation, email marketing, and client
@@ -45,9 +91,9 @@
                 CSE while seeking opportunities to contribute to educational institutions and administrative
                 organizations.
             </p>
-        </Section>
+        </section>
         <section>
-            <h2>WORK EXPERIENCE</h2>
+            <h2 class="Heading">WORK EXPERIENCE</h2>
             <p><strong> Founding Campus Manager </strong></p>
             <p>Pingu's English School | <em>May 2025 - June 2026</em></p>
             <ul>
@@ -62,7 +108,7 @@
             </ul>
         </section>
         <section>
-            <h3>KEY ACHIEVEMENT</h3>
+            <h3 class="Heading">KEY ACHIEVEMENT</h3>
             <ul>
                 <li>Successfully managed operations of a new Pingu's English School campus.</li>
                 <li>Increased parent engagement through structured communication and PTM coordination.</li>
@@ -84,7 +130,7 @@
             </ul>
         </section>
         <section>
-            <h3>CORE COMPETENCIES</h3>
+            <h3 class="Heading">CORE COMPETENCIES</h3>
             <p><strong>Education Administration</strong></p>
             <ol>
                 <li>Campus Management</li>
@@ -103,7 +149,7 @@
             </ol>
         </section>
         <section>
-            <h3>SOFTWARE & TOOLS</h3>
+            <h3 class="Heading">SOFTWARE & TOOLS</h3>
             <ol>
                 <li>MS Office Suite</li>
                 <li>Google Docs</li>
@@ -120,16 +166,16 @@
                 <li>Time Management</li>
             </ol>
         </section>
-        <Section>
+        <section>
             <h3>LANGUAGES</h3>
             <ul>
                 <li>Bangla - Native</li>
                 <li>English - Professional Working Proficiency </li>
                 <li>Hindi - Conversational</li>
             </ul>
-        </Section>
-        <Section>
-            <h2>EDUCATION</h2>
+        </section>
+        <section>
+            <h2 class="Heading">EDUCATION</h2>
             <h3>MSc in Computer Science and Engineering ( Professional)</h3>
             <p><strong>2023 - Running</strong></p>
             <h3>BSc in Computer Science and Engineering</h3>
@@ -138,9 +184,9 @@
             <p>Chandina Womens' University College - Science (2018)</p>
             <h3>Secondary School Certificate - Science (2016)</h3>
             <p>Daudkandi Adarsha (pilot) high school</p>
-        </Section>
+        </section>
         <section>
-            <h2>TRAINING & CERTIFICATIONS</h2>
+            <h2 class="Heading">TRAINING & CERTIFICATIONS</h2>
             <ul>
                 <li>Web Design - Britannia University</li>
                 <li>Social Media Marketing- 10 Minute School</li>
@@ -149,7 +195,7 @@
             </ul>
         </section>
         <section>
-            <h2>LEADERSHIP & ACTIVITIES</h2>
+            <h2 class="Heading">LEADERSHIP & ACTIVITIES</h2>
             <ul>
                 <li>Former Secretary, Computer Club, Britannia University</li>
                 <li>Former Coordinator (Women Affairs), Voice of Rights</li>
@@ -162,7 +208,7 @@
     <hr>
     <footer>
         <section>
-            <table>
+            <table class="footer">
                 <caption>References</caption>
                 <thead>
                     <tr>
