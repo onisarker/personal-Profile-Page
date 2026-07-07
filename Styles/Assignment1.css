@@ -1,24 +1,59 @@
 * {
-    background-color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .profile {
-    background-color: aquamarine;
-    text-align: center;
+    background: url("../Image/background.png") center center/cover no-repeat;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    padding: 40px 60px;
+    margin: 40px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-text {
+    color: rgb(0, 0, 0);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile-text h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+#designation {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #f5f5f5;
+}
+
+.profile img {
+    width: 180px;
+    height: 220px;
+    object-fit: cover;
+    border: 4px solid white;
+    border-radius: 12px;
 }
 
 #Information {
-    font-size: 0.8rem;
-}
-
-img {
-    width: 10%;
-    float: right;
-    margin-right: 15%;
-    margin-bottom: 60px;
-    border: 1px solid black;
-    border-radius: 12px;
+    font-size: 1.1rem;
 }
 
 .Summary {
@@ -26,30 +61,34 @@ img {
     border: 1px solid black;
     background-color: beige;
     border-style: dashed;
-    margin-right: 20px;
     padding: 10px;
     font-size: 0.9rem;
+    width: 95%;
 }
 
 .Heading {
     background-color: rgb(145, 212, 212);
     display: inline;
+    box-shadow: 5px 5px 10px rgb(145, 212, 212);
 }
 
 #designation {
     color: blueviolet;
 }
 
-th,
-td {
+table {
     background-color: black;
     color: white;
-    font-size: 15px;
+    font-size: 25px;
+    border: 1px solid white;
+    width: 100%;
+    height: 90px;
+    text-align: center;
 }
 
 tr,
 td {
-    font-size: 11px;
+    font-size: 15px;
 }
 
 .footer {
@@ -60,4 +99,5 @@ td {
     font-size: 1.5rem;
     font-weight: 700;
     background-color: aquamarine;
+    color: black;
 }
